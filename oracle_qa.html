@@ -1,0 +1,256 @@
+1. Difference between varchar and varchar2 data types?
+
+Varchar can store upto 2000 bytes and varchar2 can store upto 4000 bytes. Varchar will occupy space for NULL values and Varchar2 will not occupy any space. Both are differed with respect to space.<span id="more-669"></span>
+
+2. In which language Oracle has been developed?
+
+Oracle has been developed using C Language.
+
+3. What is RAW datatype?
+
+RAW datatype is used to store values in binary data format. The maximum size for a raw in a table in 32767 bytes.
+
+4. What is the use of NVL function?
+
+The NVL function is used to replace NULL values with another or given value. Example is – NVL(Value, replace value)
+
+5. Whether any commands are used for Months calculation? If so, What are they?
+
+In Oracle, months_between function is used to find number of months between the given dates. Example: Months_between(Date 1, Date 2)
+
+6. What are nested tables?
+
+<b>   </b>Nested table is a data type in Oracle which is used to support columns containing multi valued attributes. It also hold entire sub table.
+
+7. What is COALESCE function?
+COALESCE function is used to return the value which is set to be not null in the list. If all values in the list are null, then the coalesce function will return NULL.
+Coalesce(value1, value2,value3,…)
+
+8. What is BLOB datatype?f
+
+A BLOB data type is a varying length binary string which is used to store two gigabytes memory. Length should be specified in Bytes for BLOB.
+
+9. How do we represent comments in Oracle?
+Comments in Oracle can be represented in two ways –
+
+<li>Two dashes(&#8211;) before beginning of the line – Single statement</li>
+<li>/*&#8212;&#8212; */ is used to represent it as comments for block of statement</li>
+
+                  
+
+10. What is DML?
+
+Data Manipulation Language (DML) is used to access and manipulate data in the existing objects.  DML statements are insert, select, update and delete and it won’t implicitly commit the current transaction.
+
+11. What is the difference between TRANSLATE and REPLACE?
+
+Translate is used for character by character substitution and Replace is used substitute a single character with a word.
+
+12. How do we display rows from the table without duplicates?
+
+Duplicate rows can be removed by using the keyword DISTINCT in the select statement.
+
+13. What is the usage of Merge Statement?
+
+Merge statement is used to select rows from one or more data source for updating and insertion into a table or a view. It is used to combine multiple operations.
+
+14. What is NULL value in oracle?
+
+NULL value represents missing or unknown data. This is used as a place holder or represented it in as default entry to indicate that there is no actual data present.
+
+15. What is USING Clause and give example?
+The USING clause is used to specify with the column to test for equality when two tables are joined.
+
+[sql]Select * from employee join salary using employee ID
+Employee tables join with the Salary tables with the Employee ID.
+
+16. What is key preserved table?
+A table is set to be key preserved table if every key of the table can also be the key of the result of the join. It guarantees to return only one copy of each row from the base table.
+
+17. What is WITH CHECK OPTION?
+The WITH CHECK option clause specifies check level to be done in DML statements. It is used to prevent changes to a view that would produce results that are not included in the sub query.
+
+18. What is the use of Aggregate functions in Oracle?
+Aggregate function is a function where values of multiple rows or records are joined together to get a single value output. Common aggregate functions are –
+<ul>
+<li>Average</li>
+<li>Count</li>
+<li>Sum</li>
+</ul>
+
+19. What do you mean by GROUP BY Clause?
+A GROUP BY clause can be used in select statement where it will collect data across multiple records and group the results by one or more columns.
+
+20. What is a sub query and what are the different types of subqueries?
+Sub Query is also called as Nested Query or Inner Query which is used to get data from multiple tables. A sub query is added in the where clause of the main query.
+There are two different types of subqueries:
+<ul>
+<li>Correlated sub query</li>
+</ul>
+A Correlated sub query cannot be as independent query but can reference column in a table listed in the from list of the outer query.
+<ul>
+<li>Non-Correlated subquery</li>
+</ul>
+This can be evaluated as if it were an independent query. Results of the sub query are submitted to the main query or parent query.
+
+21. What is cross join?
+Cross join is defined as the Cartesian product of records from the tables present in the join. Cross join will produce result which combines each row from the first table with the each row from the second table.<b> </b>
+
+22. What are temporal data types in Oracle?
+Oracle provides following temporal data types:
+<ul>
+<li>Date Data Type – Different formats of Dates</li>
+<li>TimeStamp Data Type – Different formats of Time Stamp</li>
+<li>Interval Data Type – Interval between dates and time</li>
+</ul>
+
+23. How do we create privileges in Oracle?
+A privilege is nothing but right to execute an <a class="wpil_keyword_link" href="https://www.guru99.com/sql-server-questions.html" title="SQL" data-wpil-keyword-link="linked">SQL</a> query or to access another user object. Privilege can be given as system privilege or user privilege.
+[sql]GRANT user1 TO user2 WITH MANAGER OPTION;[/sql]
+
+24. What is VArray?
+VArray is an oracle data type used to have columns containing multivalued attributes and it can hold bounded array of values.
+
+25. How do we get field details of a table?
+Describe &lt;Table_Name&gt; is used to get the field details of a specified table.
+
+26. What is the difference between rename and alias?
+Rename is a permanent name given to a table or a column whereas Alias is a temporary name given to a table or column. Rename is nothing but replacement of name and Alias is an alternate name of the table or column.
+
+27. What is a View?
+View is a logical table which based on one or more tables or views.  The tables upon which the view is based are called Base Tables and it doesn’t contain data.
+
+28. What is a cursor variable?
+A cursor variable is associated with different statements which can hold different values at run time. A cursor variable is a kind of reference type.
+
+29. What are cursor attributes?
+Each cursor in Oracle has set of attributes which enables an application program to test the state of the cursor. The attributes can be used to check whether cursor is opened or closed, found or not found and also find row count.
+
+30. What are SET operators?
+SET operators are used with two or more queries and those operators are Union, Union All, Intersect and Minus.
+
+31. How can we delete duplicate rows in a table?
+Duplicate rows in the table can be deleted by using ROWID.
+
+32. What are the attributes of Cursor?
+Attributes of Cursor are
+
+<li>%FOUND</li>
+
+Returns NULL if cursor is open and fetch has not been executed
+Returns TRUE if the fetch of cursor is executed successfully.
+Returns False if no rows are returned.
+<ul>
+<li>%NOT FOUND</li>
+</ul>
+Returns NULL if cursor is open and fetch has not been executed
+Returns False if fetch has been executed
+Returns True if no row was returned
+<ul>
+<li>%ISOPEN</li>
+</ul>
+Returns true if the cursor is open
+Returns false if the cursor is closed
+<ul>
+<li>%ROWCOUNT</li>
+</ul>
+Returns the number of rows fetched. It has to be iterated through entire cursor to give exact real count.
+<div class="quads-location quads-ad2" id="quads-ad2" style="float:none;margin:0px;">
+<style>@media(max-width:499px){ .contentd1{min-height:250px;}
+}
+
+33. Can we store pictures in the database and if so, how it can be done?
+Yes, we can store pictures in the database by Long Raw Data type. This datatype is used to store binary data for 2 gigabytes of length. But the table can have only on Long Raw data type.
+
+34. What is an integrity constraint?
+An integrity constraint is a declaration defined a business rule for a table column. Integrity constraints are used to ensure accuracy and consistency of data in a database. There are types – Domain Integrity, Referential Integrity and Domain Integrity.
+
+35. What is an ALERT?
+An alert is a window which appears in the center of the screen overlaying a portion of the current display.
+
+36. What is hash cluster?
+Hash Cluster is a technique used to store the table for faster retrieval. Apply hash value on the table to retrieve the rows from the table.
+
+37. What are the various constraints used in Oracle?
+Following are constraints used:
+<ul>
+<li>NULL – It is to indicate that particular column can contain NULL values</li>
+<li>NOT NULL – It is to indicate that particular column cannot contain NULL values</li>
+<li>CHECK – Validate that values in the given column to meet the specific criteria</li>
+<li>DEFAULT – It is to indicate the value is assigned to default value</li>
+</ul>
+
+38. What is difference between SUBSTR and INSTR?
+SUBSTR returns specific portion of a string and INSTR provides character position in which a pattern is found in a string.
+SUBSTR returns string whereas INSTR returns numeric.
+
+39. What is the parameter mode that can be passed to a procedure?
+IN, OUT and INOUT are the modes of parameters that can be passed to a procedure.
+
+40. What are the different Oracle Database objects?
+There are different data objects in Oracle –
+<ul>
+<li>Tables &#8211; set of elements organized in vertical and horizontal</li>
+<li>Views  &#8211; Virtual table derived from one or more tables</li>
+<li>Indexes &#8211; Performance tuning method for processing the records</li>
+<li>Synonyms &#8211; Alias name for tables</li>
+<li>Sequences &#8211; Multiple users generate unique numbers</li>
+<li>Tablespaces &#8211; Logical storage unit in Oracle</li>
+</ul>
+
+41. What are the differences between LOV and List Item?
+
+LOV is property whereas list items are considered as single item. List of items is set to be a collection of list of items. A list item can have only one column, LOV can have one or more columns.
+
+42. What are privileges and Grants?
+
+Privileges are the rights to execute SQL statements – means Right to connect and connect. Grants are given to the object so that objects can be accessed accordingly. Grants can be provided by the owner or creator of an object.
+
+43. What is the difference between $ORACLE_BASE and $ORACLE_HOME?
+
+Oracle base is the main or root directory of an oracle whereas ORACLE_HOME is located beneath base folder in which all oracle products reside.
+
+44. What is the fastest query method to fetch data from the table?
+
+Row can be fetched from table by using ROWID. Using ROW ID is the fast
+
+45. What is the maximum number of triggers that can be applied to a single table?
+
+12 is the maximum number of triggers that can be applied to a single table.
+
+46. How to display row numbers with the records?
+
+Select rownum, fieldnames fromtable</span>;
+
+
+47. How can we view last record added to a table?
+Last record can be added to a table and this can be done by –
+<div id="crayon-606a2c32d49d4231561008" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover" style="margin-top: 12px; margin-bottom: 12px; font-size: 12 line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings="mouseover overlay hide delay" style="font-size: 12height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+<div class="crayon-tools" style="font-size: 12height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div><span class="crayon-language">MySQL</span></div></div><div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div><div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12 line-height: 15px !important;">
+Select * from (select * from employees order by rownum desc) where rownum&lt;2;</textarea></div><div class="crayon-main">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12 line-height: 15px !important;"><div class="crayon-num" data-line="crayon-606a2c32d49d4231561008-1">1</div></div></td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12 line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-606a2c32d49d4231561008-1"><span class="crayon-st">Select</span><span class="crayon-h"> </span>*<span class="crayon-h"> </span><span class="crayon-st">from</span><span class="crayon-h"> </span>(<span class="crayon-st">select</span><span class="crayon-h"> </span>*<span class="crayon-h"> </span><span class="crayon-st">from</span><span class="crayon-h"> </span>employees<span class="crayon-h"> </span><span class="crayon-st">order by</span><span class="crayon-h"> </span>rownum<span class="crayon-h"> </span><span class="crayon-st">desc</span>)<span class="crayon-h"> </span><span class="crayon-st">where</span><span class="crayon-h"> </span>rownum<span class="crayon-o">&lt;</span>2;</div></div></td>
+</tr>
+</table></div></div>&nbsp;
+48. What is the data type of DUAL table?
+The <b>DUAL</b> table is a one-column table present in oracle database.  The table has a single VARCHAR2(1) column called DUMMY which has a value of &#8216;X&#8217;.
+49. What is difference between Cartesian Join and Cross Join?
+There are no differences between the join. Cartesian and Cross joins are same. Cross join gives cartesian product of two tables &#8211; Rows from first table is multiplied with another table which is called cartesian product.
+Cross join without where clause gives Cartesian product.
+50. How to display employee records who gets more salary than the average salary in the department?
+This can be done by this query –
+<div id="crayon-606a2c32d49d5951066800" class="crayon-syntax crayon-theme-classic crayon-font-monaco crayon-os-pc print-yes notranslate" data-settings="minimize scroll-mouseover" style="margin-top: 12px; margin-bottom: 12px; font-size: 12 line-height: 15px !important;">
+<div class="crayon-toolbar" data-settings="mouseover overlay hide delay" style="font-size: 12height: 18px !important; line-height: 18px !important;"><span class="crayon-title"></span>
+<div class="crayon-tools" style="font-size: 12height: 18px !important; line-height: 18px !important;"><div class="crayon-button crayon-nums-button" title="Toggle Line Numbers"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-plain-button" title="Toggle Plain Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-wrap-button" title="Toggle Line Wrap"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-expand-button" title="Expand Code"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-copy-button" title="Copy"><div class="crayon-button-icon"></div></div><div class="crayon-button crayon-popup-button" title="Open Code In New Window"><div class="crayon-button-icon"></div></div></div></div><div class="crayon-info" style="min-height: 16.8px !important; line-height: 16.8px !important;"></div><div class="crayon-plain-wrap"><textarea wrap="soft" class="crayon-plain print-no" data-settings="dblclick" readonly style="-moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4; font-size: 12 line-height: 15px !important;">
+Select * from employee where salary&gt;(select avg(salary) from dept, employee where dept.deptno = employee.deptno);</textarea></div><div class="crayon-main">
+<table class="crayon-table">
+<tr class="crayon-row">
+<td class="crayon-nums " data-settings="show">
+<div class="crayon-nums-content" style="font-size: 12 line-height: 15px !important;"><div class="crayon-num" data-line="crayon-606a2c32d49d5951066800-1">1</div></div></td>
+<td class="crayon-code"><div class="crayon-pre" style="font-size: 12 line-height: 15px !important; -moz-tab-size:4; -o-tab-size:4; -webkit-tab-size:4; tab-size:4;"><div class="crayon-line" id="crayon-606a2c32d49d5951066800-1"><span class="crayon-e">Select *</span><span class="crayon-h"> </span><span class="crayon-e">from </span><span class="crayon-e">employee </span><span class="crayon-e">where </span><span class="crayon-i">salary</span><span class="crayon-h">&gt;</span><span class="crayon-sy">(</span><span class="crayon-e">select </span><span class="crayon-e">avg</span><span class="crayon-sy">(</span><span class="crayon-i">salary</span><span class="crayon-sy">)</span><span class="crayon-h"> </span><span class="crayon-e">from </span><span class="crayon-i">dept</span><span class="crayon-sy">,</span><span class="crayon-h"> </span><span class="crayon-e">employee </span><span class="crayon-e">where </span><span class="crayon-i">dept</span><span class="crayon-sy">.</span><span class="crayon-i">deptno</span><span class="crayon-h"> </span>=<span class="crayon-h"> </span><span class="crayon-i">employee</span><span class="crayon-sy">.</span><span class="crayon-i">deptno</span><span class="crayon-sy">)</span><span class="crayon-sy">;</span></div></div></td>
+</tr>
+</table>

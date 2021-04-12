@@ -2844,7 +2844,7 @@ return /******/ (function(modules) { // webpackBootstrap
 
 	      // Continue with next array value if current value is undefined or true
 	      else if (array[index] === undefined || array[index] === true) {
-	          continue;
+
 	        } else if (typeof array[index] === 'string') {
 	          if (config.escapeHTML) {
 	            // eslint-disable-next-line new-cap
@@ -3645,7 +3645,7 @@ return /******/ (function(modules) { // webpackBootstrap
 			// Detect buggy property enumeration order in older V8 versions.
 
 			// https://bugs.chromium.org/p/v8/issues/detail?id=4118
-			var test1 = new String('abc');  // eslint-disable-line no-new-wrappers
+			var test1 = String('abc');  // eslint-disable-line no-new-wrappers
 			test1[5] = 'de';
 			if (Object.getOwnPropertyNames(test1)[0] === '5') {
 				return false;
