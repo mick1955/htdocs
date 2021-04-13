@@ -10,10 +10,24 @@
             </Attribute>
           </value>
         </entry>
+<<<<<<< HEAD
         <entry key="/Volumes/Macintosh HD/Applications/MAMP/htdocs/front_page.html">
           <value>
             <Attribute>
               <option name="separator" value=":" />
+=======
+        <entry key="/ora-1.html">
+          <value>
+            <Attribute>
+              <option name="separator" value=";" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/oracle_qa.html">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+>>>>>>> e6157dcecd6b02abe1a05452af1bba2a414c40a7
             </Attribute>
           </value>
         </entry>

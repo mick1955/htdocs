@@ -1,0 +1,43 @@
+ 
+ var svg = document.getElementsByTagNameNS('http://www.w3.org/2000/svg', 'svg')[0];
+
+        var text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        text.setAttribute('x', 20);
+        text.setAttribute('y', 50);
+        text.setAttribute('width', 500);
+        text.style.fill = 'red';
+        text.style.fontFamily = 'Verdana';
+        text.style.fontSize = '35';
+        text.innerHTML = "Some text line";
+
+        svg.appendChild(text);
+
+        var text2 = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        text2.setAttribute('x', 20);
+        text2.setAttribute('y', 100);
+        text2.setAttribute('width', 500);
+        text2.style.fill = 'green';
+        text2.style.fontFamily = 'Calibri';
+        text2.style.fontSize = '35';
+        text2.style.fontStyle = 'italic';
+        text2.innerHTML = "Some italic line";
+
+       
+        svg.appendChild(text2);
+
+        var text3 = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        text3.setAttribute('x', 20);
+        text3.setAttribute('y', 150);
+        text3.setAttribute('width', 500);
+        text3.style.fill = 'green';
+        text3.style.fontFamily = 'Calibri';
+        text3.style.fontSize = '35';
+        text3.style.fontWeight = 700;
+        text3.innerHTML = "Some bold line";
+
+       
+        svg.appendChild(text3);
+        
+    <svg width="510" height="250" xmlns="http://www.w3.org/2000/svg">
+        <rect x="0" y="0" width="510" height="250" fill="aquamarine" />
+    </svg>
