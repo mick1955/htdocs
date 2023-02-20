@@ -3,5 +3,6 @@
     "files.exclude": {
         "**/.idea": true,
         "**/.vscode": true
-    }
+    },
+    "editor.wordWrap": "on"
 }
