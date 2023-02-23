@@ -1,11 +1,13 @@
-# Samples
-Sample code for Bootstrap, jQuery
+Bootstrap 5 has some contextual classes that can be used to provide "meaning through colors".
 
-Switch css:
-
-cd css
-ln -s bootstrap-5.2.3.min.css bootstrap.min.css
-
-cd js
-
-ln -s bootstrap.bundle-5.2.3.min.js bootstrap.bundle.min.js
+The classes for text colors are: .text-muted,
+.text-primary, 
+.text-success, 
+.text-info, 
+.text-warning, 
+.text-danger, 
+.text-secondary, 
+.text-white, 
+.text-dark, 
+.text-body (default body color/often black) and 
+.text-light
