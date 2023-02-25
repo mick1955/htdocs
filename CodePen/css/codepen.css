@@ -1,0 +1,91 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 40px;
+  font-family: "Open Sans", "sans-serif";
+  background-color: #fff;
+  color: #444;
+}
+
+.main-container {
+  background-color: #654545;
+  color: #fff;
+  border-radius: 5px;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+  padding: 20px;
+  font-size: 150%;
+  /* needed for the floated layout*/
+  margin-bottom: 10px;
+}
+
+.header-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    background-color: rgb(135, 37, 37);
+  }
+  
+  
+.flexbox {
+  display: flexbox;
+}
+
+h1,
+p {
+  margin: 0 0 1em 0;
+}
+
+/* no grid support? */
+.sidebar {
+  float: left;
+  width: 19.1489%;
+}
+
+.content {
+  float: right;
+  width: 79.7872%;
+}
+
+.wrapper > * {
+  background-color: #421d1d;
+  color: #fff;
+  border-radius: 5px;
+  border-color: black;
+  border-width: 5px;
+  border-style: solid;
+  padding: 20px;
+  font-size: 150%;
+  /* needed for the floated layout*/
+  margin-bottom: 10px;
+}
+
+.footer {
+  grid-column: 1 / -1;
+  /* needed for the floated layout */
+  clear: both;
+}
+
+.sub-header {
+  grid-column: 1 / -1;
+  /* needed for the floated layout */
+  clear: both;
+}
+
+/* We need to set the widths used on floated items back to auto, and remove the bottom margin as when we have grid we have gaps. */
+@supports (display: grid) {
+  .wrapper > * {
+    width: auto;
+    margin: 0;
+  }
+}
