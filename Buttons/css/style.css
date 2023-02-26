@@ -1,0 +1,27 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+/* body {
+  margin: 40px;
+  font-family: "Open Sans", "sans-serif";
+  background-color: #fff;
+  color: #444;
+}
+ */
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: aqua;
+    grid-template-columns: 4;
+    border-style: dashed;
+    margin:600;
+    border-color: red;
+}
+
+.box {
+    border-style: dotted;
+}
