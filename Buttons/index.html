@@ -1,37 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>Buttons</title>
+    <title>Study Guide Template</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/docs.css">
     <link rel="stylesheet" href="css/bootstrap-5.3.0.min.css">
-    <script src="js/bootstrap.bundle-5.2.3.min.js"></script>
+    <script src="js/bootstrap.bundle.5.3.0.min.js"></script>
 
-    <style>
-        .grid-container {
-            display: grid;
-        }
-        img {
-            height: 200px;
-        }
-    </style>
 </head>
-</head>
-
-<!-- Start Button Code -->
 
 <body>
 
-    <div class="flex-container">
-        <div class="box">1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-    </div>
-</body>
+    <div class="container">
 
-<!-- End Button Code -->
+        <div class="header">
+            <div class="description">
+                <div class="desc_text">
+                    Buttons
+                </div>
+            </div>
+        </div>
+
+        <div style="border: 2px dashed darkcyan; margin-bottom: 20px;"></div>
+
+        <!-- Start Example Code -->
+
+        <button type="button" class="btn btn-primary">Primary</button>
+        <button type="button" class="btn btn-secondary">Secondary</button>
+        <button type="button" class="btn btn-success">Success</button>
+        <button type="button" class="btn btn-danger">Danger</button>
+        <button type="button" class="btn btn-warning">Warning</button>
+        <button type="button" class="btn btn-info">Info</button>
+        <button type="button" class="btn btn-light">Light</button>
+        <button type="button" class="btn btn-dark">Dark</button>
+    
+        <button type="button" class="btn btn-link">Link</button>
+    
+        <p></p>
+
+        <div class="row">
+            <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action active" id="list-home-list" data-bs-toggle="list"
+                        href="#list-home" role="tab" aria-controls="list-home">Home</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-bs-toggle="list"
+                        href="#list-profile" role="tab" aria-controls="list-profile">Profile</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-bs-toggle="list"
+                        href="#list-messages" role="tab" aria-controls="list-messages">Messages</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-list" data-bs-toggle="list"
+                        href="#list-settings" role="tab" aria-controls="list-settings">Settings</a>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+                        ...</div>
+                    <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">...
+                    </div>
+                    <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">...
+                    </div>
+                    <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">...
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- End Example Code -->
+
+    </div>
+
+</body>
 
 </html>

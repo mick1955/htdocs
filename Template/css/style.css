@@ -4,8 +4,27 @@
   box-sizing: border-box;
 }
 
+.header {
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  color: darkcyan;
+  background-color: azure;
+  border-style: solid;
+  border-color: black;
+}
 
+.description {
+  display: flex;
+  padding: 1.5rem;
+  margin-right: 40px;
+  margin-left: 40px;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 8px;
+  justify-content: center;
+}
 
-H1 {
-    color:#cb1313;
+.desc_text {
+  font-size: larger;
 }

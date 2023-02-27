@@ -1,26 +1,43 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Container demo</title>
-  <link href="css/bootstrap-5.3.0.min.css" rel="stylesheet">
+    <title>Study Guide Template</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/docs.css">
+    <link rel="stylesheet" href="css/bootstrap-5.3.0.min.css">
+    <script src="js/bootstrap.bundle.5.3.0.min.js"></script>
+
 </head>
 
 <body>
 
-  <div class="container">
+    <div class="container">
 
-    <div class="border border-primary mt-5">
-      <h1>My First Bootstrap Page</h1>
+        <div class="header">
+            <div class="description">
+                <div class="desc_text">
+                    Containers
+                </div>
+            </div>
+        </div>
+
+        <div style="border: 2px dashed darkcyan; margin-bottom: 20px;"></div>
+
+        <!-- Start Example Code -->
+<div class="border border-secondary mt-5">
+      <h1>Responsive Fixed Width Container</h1>
       <p><span class="ml-5">This part is inside a .container class.</span></p>
       <p>The .container class provides a responsive fixed width container.</p>
       <p>Resize the browser window to see that the container width will change at different breakpoints.</p>
     </div>
     <h5><hr /></h5>
-    <div class="container-fluid  border-primary">
-      <h1>My First Bootstrap Page</h1>
+    <div class="container-fluid">
+      <h1>Full Width Fluid Container</h1>
       <p>This part is inside a .container-fluid class.</p>
       <p>The .container-fluid class provides a full width container, spanning the entire width of the viewport.</p>
     </div>
