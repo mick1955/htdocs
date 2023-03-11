@@ -1,0 +1,52 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.top-header {
+  display: flex;
+  flex-direction: row;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: x-large;
+  justify-content:space-between;
+  margin: 30px;
+}
+
+.header {
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  color: darkcyan;
+  background-color: azure;
+  border-style: solid;
+  border-color: darkslategray;
+}
+
+.description {
+  display: flex;
+  padding: 1.5rem;
+  margin-right: 40px;
+  margin-left: 40px;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 8px;
+  justify-content: center;
+}
+
+.desc_text {
+  font-size: larger;
+}
+
+.demo-header {
+  padding: 1.25rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  color: var(--bd-callout-color, inherit);
+  background-color: #f0ffff;
+  border-left: 0;
+}
+
+.code-display {
+  height: 20px;
+}

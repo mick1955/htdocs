@@ -1,0 +1,13 @@
+@import "_var";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: arial;
+    background: white;
+}
+
+@import "_header";
+@import "_colors";

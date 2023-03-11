@@ -5,7 +5,7 @@
 }
 
 body {
-    margin: 40px;
+    margin: 20px;
     font-family: "Open Sans", "sans-serif";
     background-color: #fff;
   }
@@ -13,6 +13,7 @@ body {
   .list-group {
     margin: 100px;
     border: solid;
+    border-color: #f0ffff;
   }
 
   .list-group-item {
@@ -35,24 +36,18 @@ body {
   font-size: 30px;
 }
 
-.intro {
-    /* max-width: 940px; */
-    display: grid;
-    /* margin: 0 auto; */
-    /* grid-template-columns: 3fr; */
-    font-size: 30px;
+/* .d-flex {
+    flex-direction: row;
+    max-width: 940px;
+    font-size: 18px;
     margin: 60px;
-    grid-gap: 10px;
-    border-color: red;
+    grid-gap; 
+    border-color: #f0ffff;
     border-width: 2px;
     border-style: solid;
   
   }
-  
-.header > div {
-  background-color: white;
-}
-
+   */
 h1,
 p {
   margin: 0 0 1em 0;
