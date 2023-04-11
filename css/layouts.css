@@ -1,0 +1,18 @@
+.layout-container {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-auto-rows: 40px;
+  align-items: center;
+  /* grid-auto-flow: row; */
+  /* gap: 10px; */
+  /* border: 1px solid blue; */
+  /* border-radius: 8px; */
+  /* margin: 40px; */
+}
+
+.layout-item {
+    text-align: center;
+    border: 1px solid blue;
+    
+  /* background-color: red; */
+}

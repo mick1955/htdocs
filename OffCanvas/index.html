@@ -2,106 +2,164 @@
 <html lang="en">
 
 <head>
-    <title>CompTIA Study Guide Template</title>
+    <title>Dictionary</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/bootstrap-5.3.0.min.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/main.css">
-    <script src="../js/bootstrap.bundle.5.3.0.min.js"></script>
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/bootstrap.bundle.min.js"></script>
 
-    <style>
-    </style>
+    <style></style>
 </head>
 
 <body>
 
     <div class="page-header">
-        <div style="align-self: flex-end;">CSS, Bootstrap and Jquery</div>
+        <div style="align-self: flex-end;">Software Dictionary</div>
         <div style="align-self: flex-start;">Revision 0.1</div>
     </div>
 
     <div class=" container">
 
-        <div class="main-header">
-            <div class="page_description">
-                <div class="description_text">
-                    Template
-                </div>
+        <div class="header main-header">
+            <div class="description-header">
+                OffCanvas Example
             </div>
         </div>
 
-        <div style="border: 1px solid darkgray; margin-bottom: 20px;"></div>
-
-        <div class="demo-header">
-            This template is used for demonstration of all Bootstrap components.
-        </div>
-
-        <!-- ---------------------- Notes ---------------------- -->
+        <!-- ------------------------ Code Accordion ------------------------ -->
 
         <div class="bd-example bd-example-row">
 
-            <div class="accordion" id="accordionFlushExampleOne">
-
+            <div class="accordion" id="accordionOne">
                 <div class="accordion-item">
-                    <h2 class="accordion-header" id="flush-headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                            Notes
+                    <h2 class="accordion-header" id="headingOne">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-controls="collapseOne" aria-expanded="false">
+                            Code
                         </button>
-
                     </h2>
 
-                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                        data-bs-parent="#accordionFlushExample">
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
                         <div class="accordion-body">
-                            <pre>
-                                <code>
-                                    <ol class="list-group list-group-numbered">
-                                        <li class="list-group-item">First item</li>
-                                        <li class="list-group-item">Second item</li>
-                                        <li class="list-group-item">Third item</li>
-                                    </ol>
-                                </code>
-                            </pre>
+                            <textarea rows="8" cols="100">
+<div>
+    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+    aria-controls="offcanvasExample">
+    Link with href
+</a>
+<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+    Button with data-bs-target
+</button>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+            aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <div>
+            Some text as placeholder. In real life you can have the elements you have chosen. Like,
+            text, images, lists, etc.
+        </div>
+        <div class="dropdown mt-3">
+            <button class="btn btn-secondary dropdown-toggle" type="button"
+                data-bs-toggle="dropdown">
+                Dropdown button
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+                            </textarea>
                         </div>
                     </div>
                 </div>
             </div>
 
-        <!-- ------------------------ Code ------------------------ -->
+        <!-- ------------------------ Notes ----------------------- -->
 
             <div class="bd-example bd-example-row">
 
-                <div class="accordion" id="accordionFlushExampleTwo">
+                <div class="accordion" id="accordionTwo">
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#flush-collapseTwo" aria-expanded="false"
-                                aria-controls="flush-collapseTwo">
-                                Code
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-controls="collapseTwo" aria-expanded="false">
+                                Notes
                             </button>
                         </h2>
-                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
                             <div class="accordion-body">
-                                <pre>
-                                    <code class="code-display">
-                                        This is where the code goes.                                        
-                                    </code>
-                                </pre>
+                                <ol>
+                                    <li>Note #1</li>
+                                    <li>Note #2</li>
+                                    <li>Note #3</li>
+                                </ol>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <p></p>
+                <p></p>
 
-            <!--  Demo Code -->
-            <div style="border: 1px solid black;height: 400px;"></div>
+                <!--  Demo Code -->
+
+                <div style="border: 1px solid blue;height: 400px;margin: 20px;border-radius: 8px;">
+
+                    <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                        aria-controls="offcanvasExample">
+                        Link with href
+                    </a>
+                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                        Button with data-bs-target
+                    </button>
+
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <div>
+                                Some text as placeholder. In real life you can have the elements you have chosen. Like,
+                                text, images, lists, etc.
+                            </div>
+                            <div class="dropdown mt-3">
+                                <button class="btn btn-secondary dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown">
+                                    Dropdown button
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+            </div>
         </div>
-    </div>
 </body>
 
 </html>

@@ -1,0 +1,37 @@
+.container {
+	display: grid;
+	border: 2px solid black;
+	border-radius: 8px;
+	background-color: lightskyblue;
+}
+
+.grid-container {
+	display: grid;
+}
+
+.button-container {
+	display: flex;
+	padding: 1.25rem;
+	margin-top: 1.25rem;
+	margin-bottom: 1.25rem;
+	justify-content: space-around;
+}
+
+.page-header {
+	display: flex;
+	justify-content: space-between;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: large;
+	margin: 24px;
+}
+
+.description-header {
+	display: flex;
+	border: 2px solid lightgray;
+	padding: 2rem;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border-radius: 8px;
+	justify-content: center;
+	font-size: x-large;
+}
