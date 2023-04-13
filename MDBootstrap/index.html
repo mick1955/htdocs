@@ -1,0 +1,3200 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="theme-color" content="#33b5e5">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <link rel="stylesheet"
+        href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/dist/mdb5/standard/modules/06d3aecc98edbb4cb9566d03d551bbb6.min.css">
+
+
+    <link rel='stylesheet' id='roboto-subset.css-css'
+        href='https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/css/mdb5/fonts/roboto-subset.css?ver=3.9.0-update.5'
+        type='text/css' media='all' />
+
+
+    <meta charset="utf-8">
+    <title>Bootstrap 5 &amp; Vanilla JavaScript - Free Material Design UI KIT</title>
+
+    <meta name="description"
+        content="700&#43; components, stunning templates, 1-min installation, extensive tutorials &amp; huge community. MIT license  - free for personal &amp; commercial use.">
+    <meta name="image"
+        content="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/pro/_main/assets/mdb5-about-v2.jpg">
+
+    <meta itemprop="name" content="Bootstrap 5 &amp; Vanilla JavaScript - Free Material Design UI KIT">
+    <meta itemprop="description"
+        content="700&#43; components, stunning templates, 1-min installation, extensive tutorials &amp; huge community. MIT license  - free for personal &amp; commercial use.">
+    <meta itemprop="image"
+        content="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/pro/_main/assets/mdb5-about-v2.jpg">
+
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Bootstrap 5 &amp; Vanilla JavaScript - Free Material Design UI KIT">
+    <meta property="twitter:description"
+        content="700&#43; components, stunning templates, 1-min installation, extensive tutorials &amp; huge community. MIT license  - free for personal &amp; commercial use.">
+    <meta property="twitter:site" content="@MDBootstrap">
+    <meta property="twitter:creator" content="@MDBootstrap">
+    <meta property="twitter:image:src"
+        content="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/pro/_main/assets/mdb5-about-v2.jpg">
+    <meta property="twitter:player" content="https://www.youtube.com/watch?v=biwC8jK7YYY">
+
+    <meta property="og:title" content="Bootstrap 5 &amp; Vanilla JavaScript - Free Material Design UI KIT">
+    <meta property="og:description"
+        content="700&#43; components, stunning templates, 1-min installation, extensive tutorials &amp; huge community. MIT license  - free for personal &amp; commercial use.">
+    <meta property="og:image"
+        content="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/pro/_main/assets/mdb5-about-v2.jpg">
+    <meta property="og:url" content="https://mdbootstrap.com/docs/standard/">
+    <meta property="og:site_name" content="MDB - Material Design for Bootstrap">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:video" content="https://www.youtube.com/watch?v=biwC8jK7YYY">
+    <meta property="fb:admins" content="443467622524287">
+    <meta property="og:type" content="website">
+
+    <link rel="shortcut icon" href="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/favicon.ico" />
+
+    <link rel="canonical" href="https://mdbootstrap.com/docs/standard/" />
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    </script>
+
+
+    <script data-cfasync="false">
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '//www.googletagmanager.com/gtm.' + 'js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-W7MBMN');
+    </script>
+
+
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "MDBootstrap",
+                "item": "https://mdbootstrap.com/",
+                "image": "https://mdbcdn.b-cdn.net/img/Marketing/mdb-press-pack/mdb-main.webp"
+            }, {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "Standard",
+                "item": "https://mdbootstrap.com/docs/standard/",
+                "image": "https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/about/assets/mdb5-about.webp"
+            }, {
+                "@type": "ListItem",
+                "position": 3,
+                "name": "Material Design for Bootstrap 5 \u0026 Vanilla JavaScript",
+                "item": "https://mdbootstrap.com/docs/standard/",
+                "image": "https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/pro/_main/assets/mdb5-about-v2.jpg"
+            }]
+        }
+    </script>
+
+    <style>
+        #navbarNotification::after {
+            content: none !important;
+        }
+
+
+        #main-navbar .badge {
+            position: absolute;
+            font-size: .6rem;
+            margin-top: -.1rem;
+            margin-left: -.5rem;
+            padding: .2em .45em;
+        }
+
+
+        #main-navbar .nav-link {
+            color: rgba(0, 0, 0, .55) !important;
+            font-size: 1rem !important;
+            font-weight: 400;
+        }
+
+        #main-navbar .nav-link :hover {
+            color: rgb(76, 76, 76);
+        }
+
+
+
+        [aria-labelledby=new-mdb-technologies-dropdown] li {
+            background-color: rgb(255, 255, 255) !important;
+        }
+
+        [aria-labelledby=new-mdb-technologies-dropdown] li :hover {
+            background-color: #EEEEEE !important;
+            box-shadow: none !important;
+        }
+
+        [aria-labelledby=userDropdown] a {
+            background-color: rgb(255, 255, 255) !important;
+            box-shadow: none !important;
+        }
+
+        [aria-labelledby=userDropdown] a:hover {
+            background-color: #EEEEEE !important;
+        }
+
+        #navbarNotificationContent a {
+            background-color: rgb(255, 255, 255) !important;
+            box-shadow: none !important;
+        }
+
+        #navbarNotificationContent a:hover {
+            background-color: #EEEEEE !important;
+        }
+
+        .dropdown-item-pseudo-focus {
+            background-color: rgba(0, 0, 0, 0.05) !important;
+            box-shadow: none !important;
+        }
+    </style>
+    <style>
+        .docs-pills {
+            border-radius: 0.5rem;
+        }
+
+        .docs-pills pre[class*="language-"] {
+            border-bottom-right-radius: 0.5rem;
+            border-bottom-left-radius: 0.5rem;
+        }
+
+        .docs-pills .btn-copy-code,
+        .docs-tab-content .export-to-snippet {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            box-shadow: none !important;
+            color: #616161 !important;
+            background-color: transparent !important;
+            padding: 6px 15px !important;
+        }
+    </style>
+    <style>
+        @media (max-width: 576px) {
+
+            [id^=dpl-],
+            [class^=dpl-],
+            .mobile-hidden {
+                display: none !important;
+            }
+        }
+    </style>
+</head>
+
+
+
+
+
+
+
+<body class="mdb-skin-custom ">
+
+    <header>
+        <style>
+            #mdb-sidenav .sidenav-collapse,
+            .sidenav .rotate-icon {
+                transition-property: none;
+            }
+
+            #mdb-sidenav .fas {
+                color: #9FA6B2;
+            }
+
+            #mdb-sidenav a {
+                color: #4B5563;
+            }
+
+            #mdb-sidenav a.active {
+                background-color: rgba(18, 102, 241, .05);
+            }
+
+            #mdb-sidenav .sidenav-item {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            #mdb-sidenav .sidenav-item:first-child {
+                margin-top: 4px;
+            }
+
+            #mdb-sidenav .sidenav-item:last-child {
+                margin-bottom: 4px;
+            }
+
+            #mdb-sidenav-toggler {
+                display: none;
+                background-color: transparent;
+            }
+
+            .mdb-docs-layout {
+                padding-left: 240px;
+            }
+
+            @media (max-width: 1440px) {
+                #mdb-sidenav-toggler {
+                    display: unset;
+                }
+
+                #mdb-sidenav {
+                    transform: translate(-100%);
+                }
+
+                .mdb-docs-layout {
+                    padding-left: 0px;
+                }
+            }
+
+            .sidenav-icon {
+                color: #9fa6b2;
+                height: 14px;
+            }
+        </style>
+
+        <div class="sidenav" data-mdb-mode="over" data-mdb-hidden="true" data-mdb-accordion="true"
+            data-mdb-transition-duration="200" id="mdb-sidenav" role="navigation">
+
+
+
+            <a class="ripple d-flex justify-content-center py-4" href="/" data-mdb-ripple-color="primary">
+                <img id="MDB-logo" src="https://mdbootstrap.com/wp-content/uploads/2018/06/logo-mdb-jquery-small.webp"
+                    alt="MDB Logo" draggable="false">
+            </a>
+
+            <div id="dpl-sidenav-top" class="w-100 text-center"></div>
+
+            <ul class="sidenav-menu" style="padding-bottom: 300px;">
+
+                <li class="sidenav-item">
+                    <a class="sidenav-link">
+                        <div style="width: 33.5px;"><i class="fas fa-download fa-fw me-3"></i></div>
+                        <span>
+                            Getting started
+                        </span>
+                    </a>
+                    <ul class="sidenav-collapse">
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/">About MDB</a>
+
+                        </li>
+                        <li class="sidenav-item" style="border-bottom: 1px solid #eee;">
+                            <a class='sidenav-link ' href="/docs/standard/getting-started/material-minimal/">About
+                                Material Minimal</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link '
+                                href="/docs/standard/getting-started/installation/">Installation</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/learn/mdb-foundations/basics/introduction/">Tutorials</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link '
+                                href="/docs/standard/getting-started/optimization/">Optimization</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/getting-started/changelog/">Changelog</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/getting-started/supported-browsers/">Supported
+                                Browsers</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/getting-started/vsc-snippets/">VSC
+                                snippets</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/getting-started/rtl/">RTL</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link '
+                                href="/docs/standard/getting-started/internationalization/">Internationalization
+                                (i18n)</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link '
+                                href="/docs/standard/getting-started/webpack-integration/">Webpack</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/getting-started/vite-integration/">Vite</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link '
+                                href="/docs/standard/getting-started/parcel-integration/">Parcel</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/getting-started/gulp-integration/">Gulp</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/getting-started/generator/">UI KIT
+                                generator</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/freebies/">Free starter templates</a>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="sidenav-item">
+                    <a class="sidenav-link">
+                        <div style="width: 33.5px;  "><i class="fas fa-gem fa-fw me-3"></i></div>
+                        <span>
+                            MDB Pro
+                        </span>
+                    </a>
+                    <ul class="sidenav-collapse">
+                        <li class="sidenav-item" style="border-bottom: 1px solid #eee;">
+                            <a class='sidenav-link ' href="/docs/standard/pro/">About MDB Pro</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/pro/installation/">Installation</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/pro/plugins-installation/">Plugins
+                                installation</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/pro/quick-start/">Quick start</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/pro/faq/">FAQ</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/pro/git/">Git &amp; repository</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/pro/support/">Premium support</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/pro/updates/">Updates</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/pro/enterprise/">Enterprise &amp;
+                                Resellers</a>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="sidenav-item">
+                    <a class="sidenav-link">
+                        <div style="width: 33.5px;  "><i class="fas fa-database fa-fw me-3"></i></div>
+                        <span>
+                            CLI &amp; free hosting
+                        </span>
+                    </a>
+                    <ul class="sidenav-collapse">
+                        <li class="sidenav-item" style="border-bottom: 1px solid #eee;">
+                            <a class="sidenav-link" href="https://mdbgo.com/" target="_blank">About MDB GO / CLI</a>
+                        </li>
+                        <li class="sidenav-item">
+                            <a class="sidenav-link" href="https://mdbgo.com/docs/getting-started/quick-start/"
+                                target="_blank">Quick start</a>
+                        </li>
+                        <li class="sidenav-item">
+                            <a class="sidenav-link" href="https://mdbgo.com/docs/getting-started/installation/"
+                                target="_blank">Getting started</a>
+                        </li>
+                        <li class="sidenav-item">
+                            <a class="sidenav-link" href="https://mdbgo.com/docs/getting-started/overview/"
+                                target="_blank">Overview</a>
+                        </li>
+                        <li class="sidenav-item">
+                            <a class="sidenav-link" href="https://mdbgo.com/docs/projects/frontend/"
+                                target="_blank">Frontend</a>
+                        </li>
+                        <li class="sidenav-item">
+                            <a class="sidenav-link" href="https://mdbgo.com/docs/projects/backend/"
+                                target="_blank">Backend</a>
+                        </li>
+                        <li class="sidenav-item">
+                            <a class="sidenav-link" href="https://mdbgo.com/docs/databases/mysql/"
+                                target="_blank">Databases</a>
+                        </li>
+                        <li class="sidenav-item">
+                            <a class="sidenav-link" href="https://mdbgo.com/docs/projects/wordpress/"
+                                target="_blank">WordPress</a>
+                        </li>
+                        <li class="sidenav-item">
+                            <a class="sidenav-link" href="https://mdbgo.com/docs/custom-domains/external-domains/"
+                                target="_blank">Configuration</a>
+                        </li>
+                        <li class="sidenav-item">
+                            <a class="sidenav-link" href="https://mdbgo.com/docs/cli/reference/"
+                                target="_blank">Reference</a>
+                        </li>
+                        <li class="sidenav-item">
+                            <a class="sidenav-link" href="https://mdbgo.com/docs/getting-started/changelog/"
+                                target="_blank">Changelog</a>
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="sidenav-item">
+                    <a class="sidenav-link">
+                        <div style="width: 33.5px;  "><i class="fas fa-puzzle-piece fa-fw me-3"></i></div>
+                        <span>
+                            Integrations <span class='badge bg-primary ms-2'>New</span>
+                        </span>
+                    </a>
+                    <ul class="sidenav-collapse">
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/integrations/expressjs/">Express.js</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/integrations/laravel/">Laravel</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/integrations/aspnet/">ASP.NET</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/integrations/django/">Django</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/integrations/flask/">Flask</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/integrations/rails/">Ruby on Rails</a>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="sidenav-item">
+                    <a class="sidenav-link">
+                        <div style="width: 33.5px;  "><i class="fas fa-th-large fa-fw me-3"></i></div>
+                        <span>
+                            Layout
+                        </span>
+                    </a>
+                    <ul class="sidenav-collapse">
+                        <li class="sidenav-item" style="border-bottom: 1px solid #eee;">
+                            <a class='sidenav-link ' href="/docs/standard/layout/grid/">Grid system</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/layout/breakpoints/">Breakpoints</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/layout/containers/">Containers</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/layout/columns/">Columns</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/layout/css-grid/">CSS Grid</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/layout/display/">Display</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/layout/flexbox/">Flexbox</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/layout/float/">Float</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/layout/gutters/">Gutters</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/layout/horizontal-alignment/">Horizontal
+                                alignment</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/layout/utilities-for-layout/">Utilities for
+                                layout</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/layout/vertical-alignment/">Vertical
+                                alignment</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/layout/z-index/">Z-index</a>
+
+                        </li>
+
+                    </ul>
+                </li>
+
+
+
+                <li class="sidenav-item">
+                    <a class="sidenav-link">
+                        <div style="width: 33.5px;  "><i class="fas fa-paint-brush fa-fw me-3"></i></div>
+                        <span>
+                            Content &amp; styles
+                        </span>
+                    </a>
+                    <ul class="sidenav-collapse">
+                        <li class="sidenav-item" style="border-bottom: 1px solid #eee;">
+                            <a class='sidenav-link ' href="/docs/standard/content-styles/theme/">Theme</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/content-styles/animations/">Animations</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/content-styles/background-image/">Background
+                                image</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/content-styles/colors/">Colors</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/content-styles/css-variables/">CSS
+                                variables</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/content-styles/dividers/">Dividers</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/content-styles/figures/">Figures</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/content-styles/flags/">Flags</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/content-styles/hover-effects/">Hover
+                                effects</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/content-styles/icons/">Icons</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/content-styles/images/">Images</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/content-styles/masks/">Masks</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/content-styles/reboot/">Reboot</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/content-styles/shadows/">Shadows</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/content-styles/typography/">Typography</a>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="sidenav-item">
+                    <a class="sidenav-link">
+                        <div style="width: 33.5px;  "><i class="fas fa-bars fa-fw me-3"></i></div>
+                        <span>
+                            Navigation
+                        </span>
+                    </a>
+                    <ul class="sidenav-collapse">
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/navigation/breadcrumb/">Breadcrumb</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/navigation/footer/">Footer</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/navigation/headers/">Headers</a>
+
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/navigation/navbar/">Navbar</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/navigation/pagination/">Pagination</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/navigation/pills/">Pills</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/navigation/scrollspy/">Scrollspy</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/navigation/sidenav/">Sidenav</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/navigation/tabs/">Tabs</a>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="sidenav-item">
+                    <a class="sidenav-link">
+                        <div style="width: 33.5px;  "><i class="fas fa-cubes fa-fw me-3"></i></div>
+                        <span>
+                            Components
+                        </span>
+                    </a>
+                    <ul class="sidenav-collapse">
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/accordion/">Accordion</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/alerts/">Alerts</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/badges/">Badges</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/buttons/">Buttons</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/button-group/">Button group</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/cards/">Cards</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/carousel/">Carousel</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/chips/">Chips</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/collapse/">Collapse</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/dropdowns/">Dropdowns</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/lightbox/">Lightbox</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/list-group/">List group</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/modal/">Modal</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/placeholders/">Placeholders</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/popconfirm/">Popconfirm</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/popovers/">Popovers</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/progress/">Progress</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/rating/">Rating</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/spinners/">Spinners</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/stepper/">Stepper</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/toasts/">Toasts</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/components/tooltips/">Tooltips</a>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="sidenav-item">
+                    <a class="sidenav-link">
+                        <div style="width: 33.5px;  "><i class="fas fa-edit fa-fw me-3"></i></div>
+                        <span>
+                            Forms
+                        </span>
+                    </a>
+                    <ul class="sidenav-collapse">
+                        <li class="sidenav-item" style="border-bottom: 1px solid #eee;">
+                            <a class='sidenav-link ' href="/docs/standard/forms/overview/">Overview</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/forms/autocomplete/">Autocomplete</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/forms/checkbox/">Checkbox</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/forms/datepicker/">Datepicker</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/forms/datetimepicker/">DateTimepicker</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/forms/file/">File</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/forms/input-fields/">Input fields</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/forms/input-group/">Input group</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/forms/multi-range-slider/">Multi range</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/forms/search/">Search</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/forms/select/">Select</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/forms/switch/">Switch</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/forms/radio/">Radio</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/forms/range/">Range</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/forms/timepicker/">Timepicker</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/forms/validation/">Validation</a>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="sidenav-item">
+                    <a class="sidenav-link">
+                        <div style="width: 33.5px;  "><i class="fas fa-table fa-fw me-3"></i></div>
+                        <span>
+                            Data
+                        </span>
+                    </a>
+                    <ul class="sidenav-collapse">
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/data/charts/">Charts</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/data/charts-advanced/">Charts advanced</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/data/tables/">Tables</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/data/datatables/">Datatables</a>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="sidenav-item">
+                    <a class="sidenav-link">
+                        <div style="width: 33.5px;  "><i class="fas fa-wrench fa-fw me-3"></i></div>
+                        <span>
+                            Utilities
+                        </span>
+                    </a>
+                    <ul class="sidenav-collapse">
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/utilities/api/">API</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/utilities/borders/">Borders</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/utilities/clearfix/">Clearfix</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/utilities/close-button/">Close button</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/utilities/embeds/">Embeds</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/utilities/interactions/">Interactions</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/utilities/opacity/">Opacity</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/utilities/overflow/">Overflow</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/utilities/position/">Position</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/utilities/screen-readers/">Screen readers</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/utilities/sizing/">Sizing</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/utilities/spacing/">Spacing</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/utilities/stacks/">Stacks</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/utilities/stretched-link/">Stretched link</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/utilities/text/">Text</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/utilities/text-truncation/">Text
+                                truncation</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/utilities/vertical-rule/">Vertical rule</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/utilities/visibility/">Visibility</a>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="sidenav-item">
+                    <a class="sidenav-link">
+                        <div style="width: 33.5px;  "><i class="fas fa-code fa-fw me-3"></i></div>
+                        <span>
+                            Methods
+                        </span>
+                    </a>
+                    <ul class="sidenav-collapse">
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/methods/clipboard/">Clipboard</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/methods/infinite-scroll/">Infinite scroll</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/methods/lazy-loading/">Lazy loading</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/methods/loading-management/">Loading
+                                management</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/methods/ripple/">Ripple</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/methods/scrollbar/">Scrollbar</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/methods/smooth-scroll/">Smooth scroll</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/methods/sticky/">Sticky</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/methods/touch/">Touch</a>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="sidenav-item">
+                    <a class="sidenav-link">
+                        <div style="width: 33.5px;  "><i class="fas fa-layer-group fa-fw me-3"></i></div>
+                        <span>
+                            Design blocks
+                        </span>
+                    </a>
+                    <ul class="sidenav-collapse">
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/design-blocks/admin/">Admin</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/design-blocks/blog/">Blog</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/design-blocks/ecommerce/">eCommerce</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/design-blocks/industries/">Industries</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/design-blocks/landing-page/">Landing page</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/design-blocks/portfolio/">Portfolio</a>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="sidenav-item">
+                    <a class="sidenav-link">
+                        <div style="width: 33.5px;  "><i class="fas fa-plug fa-fw me-3"></i></div>
+                        <span>
+                            Plugins
+                        </span>
+                    </a>
+                    <ul class="sidenav-collapse">
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/calendar/">Calendar</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/captcha/">Captcha</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/color-picker/">Color picker</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/cookies-management/">Cookies
+                                management</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/countdown/">Countdown</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/data-parser/">Data parser</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/drag-and-drop/">Drag and drop</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/dummy/">Dummy</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/ecommerce-gallery/">eCommerce
+                                gallery</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/file-upload/">File upload</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/filters/">Filters</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/input-mask/">Input mask</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/mention/">Mention</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/multi-item-carousel/">Multi item
+                                carousel</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/onboarding/">Onboarding</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/organization-chart/">Organization
+                                chart</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/parallax/">Parallax</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/scroll-status/">Scroll status</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/storage-management/">Storage
+                                management</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/table-editor/">Table editor</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/transfer/">Transfer</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/tree-view/">Tree view</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/treetable/">TreeTable</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/vector-maps/">Vector maps</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/plugins/wysiwyg-editor/">WYSIWYG editor</a>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="sidenav-item">
+                    <a class="sidenav-link">
+                        <div style="width: 33.5px;  "><i class="fas fa-image fa-fw me-3"></i></div>
+                        <span>
+                            Templates
+                        </span>
+                    </a>
+                    <ul class="sidenav-collapse">
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/templates/admin-dashboard/">Admin
+                                dashboards</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/templates/blog/">Blog</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/templates/ecommerce/">eCommerce</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/templates/landing-page/">Landing pages</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/templates/portfolio/">Portfolios</a>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+
+                <li class="sidenav-item">
+                    <a class="sidenav-link">
+                        <div style="width: 33.5px;  "><i class='fas fa-tools fa-fw me-3'></i></div>
+                        <span>
+                            Tools & resources
+                        </span>
+                    </a>
+                    <ul class="sidenav-collapse">
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="https://mdb-builder.com">Drag &amp; drop builder</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/lab/">Lab</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/tools/">Design generators</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/newsletter/">Newsletter</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link '
+                                href="https://www.youtube.com/c/Mdbootstrap?sub_confirmation=1">YouTube channel</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="https://www.facebook.com/groups/682245759188413">Private FB
+                                community</a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/mdb-offers/">Jobs <span
+                                    class='badge bg-primary ms-2'>New</span></a>
+
+                        </li>
+                        <li class="sidenav-item">
+                            <a class='sidenav-link ' href="/docs/standard/customization/ui-ux-tips/">UI / UX tips</a>
+
+                        </li>
+                    </ul>
+                </li>
+
+
+            </ul>
+
+
+        </div>
+
+        <span id="dpl-auth-modal"></span>
+
+        <style>
+            #mdb-navbar {
+                padding-left: 240px;
+                height: 58px;
+            }
+
+            #mdb-navbar-brand-logo {
+                display: none;
+            }
+
+            #sidenav-toggler {
+                display: none;
+            }
+
+            #mdb-5-search-container {
+                position: relative;
+                font-size: .8rem;
+            }
+
+            #mdb-5-search-dropdown {
+                display: none;
+                position: absolute;
+                top: 36px;
+                overflow-y: hidden;
+                width: 100%;
+                z-index: 999999;
+                background-color: white;
+            }
+
+            .mdb-5-search-keywords {
+                max-width: 100%;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                overflow: hidden;
+            }
+
+            #mdb-5-search-list {
+                overflow-y: scroll;
+                max-height: 265px;
+                position: relative;
+            }
+
+            #mdb-5-search-list li a {
+                transition: background-color .3s ease-in;
+            }
+
+            #mdb-5-search-list li a:hover,
+            #mdb-5-search-list li a:active,
+            #mdb-5-search-list li a:focus {
+                background-color: rgba(0, 0, 0, 0.05);
+                outline: none;
+            }
+
+            #mdb-5-search-input {
+                min-width: 230px;
+            }
+
+            #mdb-5-search-icon {
+                transition: color .3s ease-out;
+            }
+
+
+            @media (max-width: 1440px) {
+                #sidenav-toggler {
+                    display: inline-block;
+                }
+            }
+
+            @media (max-width: 1440px) {
+                #mdb-navbar {
+                    padding-left: 0;
+                }
+            }
+        </style>
+        <nav id="mdb-navbar" class="  navbar fixed-top navbar-expand-lg navbar-light bg-white shadow-2">
+            <div class="container-fluid">
+                <button id="sidenav-toggler" data-mdb-toggle="sidenav" data-mdb-target="#mdb-sidenav" type="button"
+                    class="btn shadow-0 p-0 me-3"><i class="fas fa-bars fa-lg"></i></button>
+                <a class="navbar-brand me-2" id="mdb-navbar-brand-logo" href="https://mdbootstrap.com/">
+                    <img src="https://mdbcdn.b-cdn.net/img/logo/mdb-transaprent-noshadows.webp" height="16" alt=""
+                        loading="lazy" style="margin-top: -1px">
+                </a>
+
+
+                <div id="mdb-5-search-container">
+                    <form class="d-none d-md-flex input-group w-auto my-auto">
+                        <input id="mdb-5-search-input" autocomplete="off" type="search" class="form-control rounded"
+                            placeholder='Search (ctrl + "/" to focus)' />
+                        <span class="input-group-text border-0"><i class="fas fa-search"
+                                id="mdb-5-search-icon"></i></span>
+                    </form>
+                    <div id="mdb-5-search-dropdown" class="rounded shadow-5">
+                        <ul id="mdb-5-search-list" class="list-unstyled mb-0"></ul>
+                        <hr class="my-0">
+                        <p class="text-muted small text-end pe-3 mt-3">search results: <strong
+                                id="mdb-5-search-count"></strong></p>
+                    </div>
+                </div>
+
+
+
+                <span id="dpl-navbar-new-right-buttons" class="navbar-nav ms-auto d-flex flex-row"></span>
+
+
+            </div>
+        </nav>
+
+
+
+    </header>
+
+    <style>
+        #mdb-navbar {
+            padding-left: 0px;
+        }
+
+        #sidenav-toggler {
+            display: inline-block;
+        }
+
+        .mdb-docs-layout {
+            padding-left: 0px;
+        }
+
+        #mdb-footer {
+            padding-left: 0px;
+        }
+
+        #mdb-navbar-brand-logo {
+            display: inline;
+            padding-top: 1px;
+        }
+
+        #svg-about-intro {
+            height: 410px;
+        }
+
+        @media (min-width: 1200px) {
+            #svg-about-intro {
+                height: 630px;
+            }
+        }
+    </style>
+
+
+
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none"
+        class="svg position-absolute d-none d-lg-block" id="svg-about-intro" style="
+         width: 100%; z-index: -10; overflow: hidden;transform: rotateY(180deg);
+        
+        
+        
+        width: 100%; z-index: -10
+      ">
+        <defs>
+            <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
+                <stop stop-color="
+                hsl(267, 100%, 96.5%)
+                
+                
+                
+              " offset="0%">
+                </stop>
+                <stop stop-color="
+                hsl(267, 0%, 99.1%)
+                
+                
+                
+              " offset="100%">
+                </stop>
+            </linearGradient>
+        </defs>
+        <path fill="url(#sw-gradient-0)"
+            d="M 0.351 264.418 C 0.351 264.418 33.396 268.165 47.112 270.128 C 265.033 301.319 477.487 325.608 614.827 237.124 C 713.575 173.504 692.613 144.116 805.776 87.876 C 942.649 19.853 1317.845 20.149 1440.003 23.965 C 1466.069 24.779 1440.135 24.024 1440.135 24.024 L 1440 0 L 1360 0 C 1280 0 1120 0 960 0 C 800 0 640 0 480 0 C 320 0 160 0 80 0 L 0 0 L 0.351 264.418 Z">
+        </path>
+    </svg>
+
+
+
+
+
+    <main class="pt-5 mdb-docs-layout">
+        <div class="container mt-5  mt-5  ">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div class="tab-content">
+                <div class="tab-pane fade in show active" id="docsTabsOverview" role="tabpanel">
+                    <div class="row">
+
+                        <div class=" col-md-12">
+
+                            <!-- Section: Content -->
+                            <section class="" style="padding: 10px 0px 0px 0px;">
+                                <!-- Section: Intro -->
+                                <section class="mt-md-4">
+                                    <style></style>
+                                    <div class="row">
+                                        <div class="col-md-6 mb-4 mb-md-0 d-flex align-items-center">
+                                            <div>
+                                                <h1 class="fw-bold h2">
+                                                    Material Design <br>
+                                                    <small class="text-theme">for Bootstrap 5 &amp; Vanilla
+                                                        JavaScript</small>
+                                                </h1>
+
+                                                <p class="text-muted">
+                                                    Standard Bootstrap version built with plain JS (but works also
+                                                    with jQuery)
+                                                </p>
+
+                                                <style>
+                                                    body {
+                                                        background-color: #fbfbfb;
+                                                    }
+
+                                                    .bg-theme {
+                                                        background-color: #7446ac !important;
+                                                    }
+
+                                                    .text-theme {
+                                                        color: #7446ac !important;
+                                                    }
+
+                                                    .border-theme {
+                                                        border: 2px solid #7446ac !important;
+                                                    }
+
+                                                    .btn-secondary-theme {
+                                                        color: hsl(267, 42%, 47%);
+                                                        box-shadow: none !important;
+                                                        background-color: hsl(263, 50%, 94%);
+
+                                                    }
+
+                                                    .btn-secondary-theme:hover,
+                                                    .btn-secondary-theme:focus {
+                                                        background-color: hsl(267, 70%, 95%);
+                                                        color: hsl(267, 42%, 37%);
+                                                    }
+                                                </style>
+                                                <div class="">
+                                                    <ol class="list-unstyled my-5 text-muted">
+                                                        <li class="mb-3">
+                                                            <a href="https://mdbootstrap.com/docs/standard/"
+                                                                class="text-reset">
+                                                                <i class="fas fa-check text-theme me-2"></i>700+ UI
+                                                                components &amp; templates
+                                                            </a>
+                                                        </li>
+                                                        <li class="mb-3">
+                                                            <a href="https://mdbootstrap.com/docs/standard/getting-started/installation/"
+                                                                class="text-reset">
+                                                                <i class="fas fa-check text-theme me-2"></i>Super
+                                                                simple, 1 minute installation</a>
+                                                        </li>
+                                                        <li class="mb-3">
+                                                            <i class="fas fa-check text-theme me-2"></i>Easy theming and
+                                                            customization
+                                                        </li>
+                                                        <li class="">
+                                                            <i class="fas fa-check text-theme me-2"></i>MIT license -
+                                                            free for personal &amp; commercial use
+                                                        </li>
+                                                    </ol>
+
+                                                    <a class="btn btn-lg bg-theme text-white me-3"
+                                                        href="/docs/standard/getting-started/installation/"
+                                                        role="button">Get
+                                                        started</a>
+
+                                                    <a class="btn btn-secondary-theme btn-lg me-3"
+                                                        data-mdb-smooth-scroll="smooth-scroll" data-mdb-offset="25"
+                                                        data-mdb-ripple-color="hsl(265, 81.4%, 53.5%)" href="#demo"
+                                                        role="button">Demo</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-md-6 mb-4 mb-md-0 d-flex align-items-center">
+                                            <div class="bg-image hover-overlay ripple shadow-3 rounded-7"
+                                                data-ripple-color="light">
+                                                <img src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/content/en/_mdb5/_assets/img/homepage/quick-start.webp"
+                                                    class="w-100" alt="MDBootstrap 5 Quick Start" />
+                                                <a href="https://www.youtube.com/watch?v=hb5ypV0ZHt0&list=PLl1gkwYU90QkeAAHno3iVJokh2evwMwaX&ab_channel=Keepcoding"
+                                                    rel="nofollow" target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- Section: Intro -->
+
+                                <!-- Logotypes -->
+                                <section class="text-center my-4 py-4 my-md-5 py-md-5 mb-lg-8">
+                                    <style>
+                                        .mdb-logotypes img {
+                                            max-width: 70px;
+                                        }
+
+                                        @media (max-width: 1400px) {
+                                            .mdb-logotypes img {
+                                                max-width: 60px;
+                                                margin-bottom: 10px;
+                                            }
+                                        }
+
+                                        .logo-icon {
+                                            filter: grayscale(100%);
+                                        }
+                                    </style>
+
+                                    <p class="mb-4">
+                                        Trusted <strong>by 3,000,000+</strong> developers and designers
+                                    </p>
+                                    <div class="row mdb-logotypes">
+                                        <div class="col-lg-1 col-4">
+                                            <img src="https://mdbcdn.b-cdn.net/img/logo/brands/nasa.webp"
+                                                style="max-height: 27px" class="img-fluid logo-icon"
+                                                alt="nasa - logo" />
+                                        </div>
+
+                                        <div class="col-lg-1 col-4">
+                                            <img src="https://mdbcdn.b-cdn.net/img/logo/brands/amazon.webp"
+                                                class="img-fluid logo-icon" alt="amazon - logo" />
+                                        </div>
+
+                                        <div class="col-lg-1 col-4">
+                                            <img src="https://mdbcdn.b-cdn.net/img/logo/brands/nike.webp"
+                                                class="img-fluid logo-icon" alt="Nike - logo" />
+                                        </div>
+
+                                        <div class="col-lg-1 col-4">
+                                            <img src="https://mdbcdn.b-cdn.net/img/logo/brands/ikea.webp"
+                                                class="img-fluid logo-icon" alt="ikea - logo" />
+                                        </div>
+
+                                        <div class="col-lg-1 col-4">
+                                            <img src="https://mdbcdn.b-cdn.net/img/logo/brands/kpmg.webp"
+                                                class="img-fluid logo-icon" alt="kpmg - logo" />
+                                        </div>
+
+                                        <div class="col-lg-1 col-4">
+                                            <img src="https://mdbcdn.b-cdn.net/img/logo/brands/sony.webp"
+                                                class="img-fluid logo-icon" alt="sony - logo" />
+                                        </div>
+
+                                        <div class="col-lg-1 col-4">
+                                            <img src="https://mdbcdn.b-cdn.net/img/logo/brands/unity.webp"
+                                                class="img-fluid logo-icon" alt="unity - logo" />
+                                        </div>
+
+                                        <div class="col-lg-1 col-4">
+                                            <img src="https://mdbcdn.b-cdn.net/img/logo/brands/samsung.webp"
+                                                class="img-fluid logo-icon" alt="samsung - logo" />
+                                        </div>
+
+                                        <div class="col-lg-1 col-4">
+                                            <img src="https://mdbcdn.b-cdn.net/img/logo/brands/airbus.webp"
+                                                class="img-fluid logo-icon" alt="airbus - logo" />
+                                        </div>
+
+                                        <div class="col-lg-1 col-4">
+                                            <img src="https://mdbcdn.b-cdn.net/img/logo/brands/yahoo.webp"
+                                                class="img-fluid logo-icon" alt="yahoo - logo" />
+                                        </div>
+
+                                        <div class="col-lg-1 col-4">
+                                            <img src="https://mdbcdn.b-cdn.net/img/logo/brands/deloitte.webp"
+                                                class="img-fluid logo-icon" alt="deloitte - logo" />
+                                        </div>
+
+                                        <div class="col-lg-1 col-4">
+                                            <img src="https://mdbcdn.b-cdn.net/img/logo/brands/ge.webp"
+                                                class="img-fluid logo-icon" alt="ge - logo" />
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- Logotypes -->
+
+                                <!--Section: Free components-->
+                                <section id="demo" class="text-center">
+                                    <div class="row gx-lg-5">
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/button-2.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/button-2.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Buttons Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/components/buttons/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Buttons</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/dropdown-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/dropdown-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Dropdowns Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/components/dropdowns/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Dropdowns</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="../standard/pro/demo/assets/img/accordion-2.webp"
+                                                        type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/accordion-2.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Accordion Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/components/accordion/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Accordion</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/badge-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/badge-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Badges Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/components/badges/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Badges</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/button-group-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/button-group-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Button Group Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/components/button-group/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Button Group</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/card-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/card-1.webp" class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Cards Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/components/cards/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Cards</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/carousel-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/carousel-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Carousel Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/components/carousel/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Carousel</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/collapse-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/collapse-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Collapse Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/components/collapse/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Collapse</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/list-group-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/list-group-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design List Group Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/components/list-group/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">List Group</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/modal-free-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/modal-free-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Modal Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/components/modal/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Modal</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/popover-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/popover-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Popovers Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/components/popovers/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Popovers</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/progress-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/progress-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Progress Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/components/progress/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Progress</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/spinner-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/spinner-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Spinners Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/components/spinners/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Spinners</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/tooltip-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/tooltip-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Tooltips Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/components/tooltips/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Tooltips</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/pro/demo-new/assets/images/icons.webp
+              " type="image/webp" />
+                                                    <img src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/pro/demo-new/assets/images/icons.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Icons Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/content-styles/icons/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Icons</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/figure-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/figure-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Figures Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/content-styles/figures/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Figures</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/image-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/image-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Images Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/content-styles/images/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Images</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/mask-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/mask-1.webp" class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Masks Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/content-styles/masks/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Masks</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/pro/demo-new/assets/images/flags.webp
+              " type="image/webp" />
+                                                    <img src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/pro/demo-new/assets/images/flags.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Flags Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/content-styles/flags/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Flags</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/hover-effect-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/hover-effect-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Hover Effects Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/content-styles/hover-effects/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Hover effects</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/shadow-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/shadow-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Shadows Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/content-styles/shadows/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Shadows</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/breadcrumb-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/breadcrumb-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Breadcrumbs Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/navigation/breadcrumb/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Breadcrumbs</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/footer-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/footer-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Footer Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/navigation/footer/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Footer</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/header-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/header-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Headers Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/navigation/headers/#section-jumbotron"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Jumbotron</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/pro/demo-new/assets/images/navbar.webp
+              " type="image/webp" />
+                                                    <img src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/content/en/_mdb5/standard/pro/demo-new/assets/images/navbar.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Navbar Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/navigation/navbar/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Navbar</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/pagination-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/pagination-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Pagination Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/navigation/pagination/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Pagination</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/pills-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/pills-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Pills Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/navigation/pills/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Pills</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/tabs-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/tabs-1.webp" class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Tabs Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/navigation/tabs/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Tabs</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/checkbox-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/checkbox-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Checkbox Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/forms/checkbox/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Checkbox</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/search-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/search-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Search Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/forms/search/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Search</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/radio-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/radio-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Radio Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/forms/radio/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Radio</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/range-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/range-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Range Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/forms/range/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Range</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/validation-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/validation-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Validation Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/forms/validation/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Validation</h6>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-6 mb-5 mx-lg-auto">
+                                            <div class="
+            bg-image
+            hover-overlay
+            ripple
+            shadow-3
+            rounded-6
+            mb-3
+          " data-ripple-color="light">
+                                                <picture>
+                                                    <source srcset="
+                ../standard/pro/demo/assets/img/table-1.webp
+              " type="image/webp" />
+                                                    <img src="../standard/pro/demo/assets/img/table-1.webp"
+                                                        class="w-100"
+                                                        alt="MDB 5 - Bootstrap 5 &amp; Material Design Tables Component" />
+                                                </picture>
+                                                <a href="https://mdbootstrap.com/docs/standard/data/tables/"
+                                                    target="_blank">
+                                                    <div class="mask"
+                                                        style="background-color: rgba(251, 251, 251, 0.2)"></div>
+                                                </a>
+                                            </div>
+                                            <h6 class="mb-0">Tables</h6>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!--Section: Free components-->
+                            </section>
+                            <!-- Section: Content -->
+
+                            <div class="my-1 py-1 my-md-2 py-md-3"></div>
+                            <!-- Skrypt licznika  -->
+
+                            <script>
+                                // Toasts
+                                const instance = mdb.Toast.getInstance(document.getElementById('example'));
+                                instance.update({ color: 'info', });
+
+                                // Ad counter
+                                // Set the date we're counting down to
+                                var countDownDate = new Date(Date.UTC(2020, 11, 12, 12, 0, 0));
+                                var counterElement = document.getElementById("time-counter");
+
+                                // Update the count down every 1 second
+                                function startCounter() {
+
+                                    // wrapped in an if to prevent console errors if the element isn't found on the page
+                                    if (counterElement == null) {
+                                        return
+                                    } else {
+                                        var x = setInterval(
+
+                                            function () {
+
+                                                // Get todays date and time
+                                                var now = new Date().getTime();
+
+                                                // Find the distance between now an the count down date
+                                                var distance = countDownDate - now;
+
+                                                // Time calculations for days, hours, minutes and seconds
+                                                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                                                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                                                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                                                // Display the result in the element with id="demo"
+                                                counterElement.innerHTML = hours + "h " +
+                                                    minutes + "m " + seconds + "s";
+                                                // If the count down is finished, write some text
+                                                if (distance < 0) {
+                                                    clearInterval(x);
+                                                    document.getElementById("time-counter").innerHTML =
+                                                        '<p class="h3 grey-text">Sale ended :(</p>';
+                                                }
+                                            }, 1000);
+                                    }
+                                }
+                                startCounter();
+                            </script>
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+    <style>
+        @media (max-width: 1440px) {
+            #mdb-footer {
+                padding-left: 0;
+            }
+        }
+    </style>
+
+    <footer id="mdb-footer" class="mt-5" style="background-color: hsl(216, 25%, 95.1%); ">
+        <div class="container py-5">
+
+            <div class="text-center">
+
+                <p class="">
+                    Get useful tips & free resources directly to your inbox along with exclusive subscriber-only
+                    content.
+                </p>
+                <a href="https://mdbootstrap.com/newsletter/" class="btn btn-primary">JOIN OUR MAILING LIST NOW<i
+                        class="fas fa-angle-double-right ms-2"></i></a>
+
+
+
+
+            </div>
+
+
+            <hr class="my-5">
+            <div class="row text-center text-md-start">
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">USEFUL LINKS</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="https://mdbootstrap.com/services/" class="text-dark">Services</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/docs/standard/getting-started/faq/"
+                                class="text-dark">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/general/license/" class="text-dark">License</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/general/privacy-policy/" class="text-dark">Privacy
+                                policy</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/general/return-refund-policy/"
+                                class="text-dark">Return/refund policy</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/mdb-affiliate-program/" class="text-dark">Affiliate
+                                program</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/general/mdb-edu/" class="text-dark">For students &
+                                educators</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/resellers/" class="text-dark">For resellers</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Resources</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="https://mdbootstrap.com/support/" class="text-dark">Support forum</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/learn/mdb-foundations/basics/introduction/"
+                                class="text-dark">Tutorials</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/snippets/" class="text-dark">MDB playground</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/docs/standard/lab/" class="text-dark">MDB LAB</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/docs/standard/cli/" class="text-dark">MDB CLI &amp;
+                                hosting</a>
+                        </li>
+
+
+                        <li>
+                            <a href="https://mdbootstrap.com/docs/standard/extended/" class="text-dark">Extended
+                                documentation</a>
+                        </li>
+
+                        <li>
+                            <a target="_blank" href="https://tailwind-elements.com/" class="text-dark">Tailwind
+                                components</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Technologies</h5>
+
+                    <ul class="list-unstyled mb-0">
+                        <li>
+                            <a href="https://mdbootstrap.com/docs/standard/" class="text-dark">Plain JavaScript</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/docs/b4/jquery/" class="text-dark">jQuery</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/docs/angular/" class="text-dark">Angular</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/docs/react/" class="text-dark">React</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/docs/vue/" class="text-dark">Vue</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/docs/standard/integrations/expressjs"
+                                class="text-dark">Node.js (Express.js)</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/docs/standard/integrations/laravel" class="text-dark">Php
+                                (Laravel)</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/docs/standard/integrations/aspnet" class="text-dark">.NET
+                                core (ASP.NET)</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/docs/standard/integrations/django" class="text-dark">Python
+                                (Django)</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/docs/standard/integrations/flask" class="text-dark">Python
+                                (Flask)</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/docs/standard/integrations/rails" class="text-dark">Ruby
+                                (Ruby on Rails)</a>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">COMPANY</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="https://mdbootstrap.com/services/" class="text-dark">Services</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/general/contact/" class="text-dark">Contact & info</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/general/our-team/" class="text-dark">Our team</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/general/press-pack/" class="text-dark">For media</a>
+                        </li>
+                        <li>
+                            <a href="https://mdbootstrap.com/pmt-project/" class="text-dark">PMT</a>
+                        </li>
+                        <hr>
+                        <li>
+                            <a href="https://github.com/mdbootstrap/mdb-ui-kit" rel="nofollow" target="_blank"
+                                class="text-dark"><i class="fab fa-github me-2"></i>GitHub</a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/channel/UC5CF7mLQZhvx8O5GODZAhdA" rel="nofollow"
+                                target="_blank" class="text-dark"><i class="fab fa-youtube me-2"></i>YouTube</a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/mdbootstrap" rel="nofollow" target="_blank"
+                                class="text-dark"><i class="fab fa-facebook me-2"></i>Facebook</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/MDBootstrap" rel="nofollow" target="_blank"
+                                class="text-dark"><i class="fab fa-twitter me-2"></i>Twitter</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="text-center p-3" style="background-color: hsl(216, 25%, 90%);">© 2023
+            Copyright:
+            <a class="" href="https://mdbootstrap.com/"> <strong>MDBootstrap.com</strong></a>
+        </div>
+
+    </footer>
+
+    <span id="dpl-mdb5-cookies-modal"></span>
+    <span id="dpl-newmdb-docs-snippets-modal"></span>
+
+    <div class="modal fade" id="apiRestrictedModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <section>
+                        <div class="text-center">
+                            <h3 class="font-weight-bold border border-primary p-3 mb-3">Access restricted</h3>
+
+                            <h5><strong>To view this section you must have an active PRO account</strong></h5>
+
+                            <p>
+                                <strong>Log in</strong> to your account or
+                                <strong>purchase an MDB5 PRO subscription</strong> if you don't have one.
+                            </p>
+
+                            <a class="btn btn-primary me-1 auth-modal-toggle" data-auth-modal-tab="sign-in"
+                                data-mdb-dismiss="modal">Login</a>
+                            <a class="btn btn-secondary" target="_blank" role="button">Buy MDB Pro</a>
+                        </div>
+                    </section>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-mdb-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        const CONFIG = {
+            docsApiUrl: "https://mdbootstrap.com/api/docs"
+        };
+
+        const supportedLanguages = {
+            en: {
+                flag: 'flag-united-kingdom',
+                name: 'English'
+            },
+            cn: {
+                flag: 'flag-china',
+                name: '中文'
+            }
+        };
+
+        const currencySymbols = {
+            USD: '$',
+            EUR: '€',
+            GBP: '£',
+            INR: '₹',
+        };
+
+        function getSiteLanguage() {
+            const [, language] = location.pathname.split('/');
+            switch (language) {
+                case 'cn': return 'cn';
+                case 'es': return 'cn';
+                default: return 'en';
+            }
+        }
+
+        function getCurrentTechnology(url) {
+            const currentUrl = url || location.pathname;
+            switch (true) {
+                case (currentUrl.indexOf('/docs/standard') === 0): return 'standard';
+                case (currentUrl.indexOf('/docs/angular') === 0): return 'b5-angular';
+                case (currentUrl.indexOf('/docs/b5/angular') === 0): return 'b5-angular';
+                case (currentUrl.indexOf('/docs/react') === 0): return 'b5-react';
+                case (currentUrl.indexOf('/docs/b5/react') === 0): return 'b5-react';
+                case (currentUrl.indexOf('/docs/b5/vue') === 0): return 'b5-vue';
+                case (currentUrl.indexOf('/docs/b4/jquery') === 0): return 'jquery';
+                case (currentUrl.indexOf('/docs/b4/angular') === 0): return 'angular';
+                case (currentUrl.indexOf('/docs/b4/react') === 0): return 'react';
+                case (currentUrl.indexOf('/docs/vue') === 0): return 'b5-vue';
+                case (currentUrl.indexOf('/docs/b4/vue') === 0): return 'vue';
+            }
+        }
+
+        function getCookie(name) {
+            const decodedCookie = decodeURIComponent(document.cookie);
+            const cookies = decodedCookie.split(';');
+
+            for (let i = 0; i < cookies.length; i++) {
+                let cookie = cookies[i];
+                while (cookie.charAt(0) === ' ') {
+                    cookie = cookie.substring(1);
+                }
+                if (cookie.indexOf(name) === 0) {
+                    return cookie.substring(name.length, cookie.length);
+                }
+            }
+
+            return null;
+        }
+
+        document.addEventListener('dpl_loaded', e => {
+            const cookieName = 'MDBGoSubscriptionTier';
+            const authUser = e.detail;
+            if (authUser.isGoPro && !getCookie(cookieName)) {
+                _setCookie(cookieName, 'Professional', 365);
+            }
+        });
+
+        function _setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+    </script>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', (e) => {
+
+            function checkSidenavActiveLinks() {
+
+                document.querySelectorAll('.sidenav-menu li').forEach((menu) => {
+
+                    var collapse = document.querySelectorAll('ul.sidenav-collapse li').forEach((link) => {
+                        var is_active = link.querySelector('a.sidenav-link').classList.contains('active');
+                        var collapseIcon = menu.querySelector('.rotate-icon');
+
+                        if (is_active && collapseIcon) {
+                            link.classList.add('show');
+                            return false;
+                        }
+                    });
+                });
+            }
+
+
+            checkSidenavActiveLinks();
+
+            const setTransitionProperties = () => {
+                const sidenav = document.getElementById('mdb-sidenav');
+                const rotateIcons = sidenav.querySelectorAll('.rotate-icon');
+                const collapse = sidenav.querySelectorAll('.sidenav-collapse');
+
+                rotateIcons.forEach(icon => {
+                    icon.style.transitionProperty = 'transform'
+                });
+
+                collapse.forEach(collapse => {
+                    collapse.style.transitionProperty = 'height'
+                });
+            }
+
+
+            setTimeout(setTransitionProperties, 1);
+        });
+    </script>
+
+
+
+
+
+    <script type="text/javascript"
+        src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/mdb5/standard/modules/06d3aecc98edbb4cb9566d03d551bbb6.min.js"></script>
+
+
+
+    <script type="text/javascript"
+        src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/search/search.min.js"></script>
+    <script src="https://mdbcdn.b-cdn.net/wp-content/themes/mdbootstrap4/docs-app/js/dist/main.min.js"></script>
+
+
+    <script>
+        let isSidenavHidden = false;
+        isSidenavHidden = true;
+        const sidenav = document.getElementById('mdb-sidenav');
+        const instance = mdb.Sidenav.getInstance(sidenav);
+
+
+        let innerWidth = null;
+
+        const setMode = () => {
+            if (window.innerWidth === innerWidth) return;
+
+            innerWidth = window.innerWidth;
+            const isFrontPage = 0;
+
+            if (innerWidth <= 1440 || isFrontPage || isSidenavHidden) {
+                instance.changeMode('over');
+                instance.hide();
+                return;
+            }
+            instance.changeMode('side');
+            instance.show();
+        };
+
+        if (sidenav) {
+            window.addEventListener('resize', setMode);
+            setMode();
+        }
+
+
+
+        function mdbScrollSpyTo(e) {
+            e.preventDefault();
+            const hash = e.target.getAttribute('href');
+            const target = document.getElementById(hash.substring(1));
+
+            window.scroll({
+                top: target.offsetTop - 100,
+                behavior: 'smooth'
+            });
+
+            if (history.pushState) {
+                history.pushState(null, null, hash);
+            } else {
+                location.hash = hash;
+            }
+        }
+
+        document.querySelectorAll('#scrollspy .menu-sidebar a').forEach((link) => {
+            link.addEventListener('click', mdbScrollSpyTo, false);
+        });
+
+
+        if (window.location.hash) {
+            const target = document.getElementById(window.location.hash.substring(1));
+
+            setTimeout(function () {
+                window.scroll({
+                    top: 0
+                });
+
+                setTimeout(() => {
+                    window.scroll({
+                        top: target.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }, 1000);
+            }, 1);
+        }
+
+
+
+
+        window.addEventListener("load", (event) => {
+            const locationHash = window.location.hash;
+            const scrollTop = () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            }
+
+            if (locationHash === "#docsTabsAPI") {
+                const apiTab = document.querySelector('#docs-nav-pills a[href="#docsTabsAPI"]');
+
+                if (apiTab) {
+                    const apiTabsInstance = new mdb.Tab(apiTab);
+
+                    apiTabsInstance.show();
+                    scrollTop();
+                }
+            } else if (locationHash === "#docsTabsOverview") {
+                scrollTop();
+            } else if (["#topTemplates", "#newTemplates", "#trendingTemplates"].indexOf(locationHash) !== -1) {
+                const templateTab = document.querySelector('#templates-nav-pills a[href="' + locationHash + '"]');
+
+                if (templateTab) {
+                    const templateTabsInstance = new mdb.Tab(templateTab);
+
+                    templateTabsInstance.show();
+                    scrollTop();
+                }
+            }
+
+            const navPills = document.querySelectorAll('#docs-nav-pills a[data-mdb-toggle="tab"]');
+
+            if (navPills.length) {
+                navPills.forEach((el) => {
+                    el.addEventListener('click', (e) => {
+                        window.location.hash = e.target.hash;
+
+                        scrollTop();
+                    });
+                });
+            }
+
+            const templatePills = document.querySelectorAll('#templates-nav-pills a[data-mdb-toggle="pill"]');
+
+            if (templatePills.length) {
+                templatePills.forEach((el) => {
+                    el.addEventListener('click', (e) => {
+                        window.location.hash = e.target.hash;
+
+                        scrollTop();
+                    });
+                });
+            }
+        });
+    </script>
+
+
+    <script>
+        (function () {
+            const searchInput = document.getElementById('mdb-5-search-input');
+            const searchIcon = document.getElementById('mdb-5-search-icon');
+            const searchList = document.getElementById('mdb-5-search-list');
+            const searchForm = document.getElementById('mdb-5-search-container');
+            const searchDropdown = document.getElementById('mdb-5-search-dropdown');
+            const searchCount = document.getElementById('mdb-5-search-count');
+
+            let searchJsonFile = "https://mdbootstrap.com/wp-content/themes/mdbootstrap4/docs-app" + '/js/dist/search/';
+
+            switch ("standard") {
+                case 'b5-angular':
+                    searchJsonFile += 'search-angular.json'
+                    break;
+                case 'b5-react':
+                    searchJsonFile += 'search-react.json'
+                    break;
+                case 'b5-vue':
+                    searchJsonFile += 'search-vue.json'
+                    break;
+                default:
+                    searchJsonFile += 'search.json'
+                    break;
+            }
+
+            const search = new Search(searchInput, searchIcon, searchList, searchForm, searchDropdown, searchCount, searchJsonFile);
+
+            search.init();
+        })();
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

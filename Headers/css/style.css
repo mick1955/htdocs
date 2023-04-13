@@ -1,0 +1,11 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+
+
+H1 {
+    color:#cb1313;
+}
