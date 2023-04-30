@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#ajaxBtn").click(function () {
+                $.ajax("/jquery/submitData", {
+                    url: 'http://Applications/MAMP/AJAX/phpinfp.html',
+                    type: "POST", // http method
+                    data: { myData: "This is my data." }, // data to submit
+                    success: function (data, status, xhr) {
+                        $("p").append("status: " + status + ", data: " + data);
+                    },
+                    error: function (jqXhr, textStatus, errorMessage) {
+                        $("p").append("Error: " + textStatus + errorMessage);
+                    },
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>jQuery ajax() demo</h1>
+    <input type="button" id="ajaxBtn" value="Send Ajax request" />
+    <p></p>
+</body>
+
+</html>

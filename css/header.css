@@ -1,6 +1,6 @@
 .container {
 	display: grid;
-	border: 2px solid darkgray;
+	border: 2px solid darkgreen;
 	border-radius: 8px;
 	background-color: lightskyblue;
 }
@@ -27,7 +27,6 @@
 
 .description-header {
 	display: flex;
-	border: 2px solid darkgreen;
 	padding: 2rem;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -36,9 +35,16 @@
 	font-size: x-large;
 	color: darkgreen;
 }
+
 .demo_header {
 	border: 2px solid darkgreen;
-	height: 400px;
-	margin: 10px;
+	height: 550px;
+	margin: 15px;
 	border-radius: 4px;
 }
+.demo_label {
+	display: flex;
+	justify-content: space-evenly;
+	font-weight: bold;
+}
+

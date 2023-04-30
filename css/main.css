@@ -12,6 +12,9 @@ header h1 {
   font-size: 8rem;
 }
 
+.page-header {
+  border-color: darkgreen;
+}
 .aliceblue {
   background-color: #F0F8FF;
 }

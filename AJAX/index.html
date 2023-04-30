@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width" />
+    <script type="text/javascript" src="../js/jquery.min.js"></script>
+
+    # <script type="text/javascript" src="js/scripts.js"></script>
+
+    <script type="text/javascript">
+    $(document).ready(function () {
+        $("button").click(function () {
+            $.ajax(url: "demo.txt", success: function(result){
+                $("#div1").html(result);
+        }});
+    });
+    </script>
+    </head>
+
+    <body>
+    <h1>jQuery ajax() demo</h1>
+    <div id="div1"><h2>This should change</h2>
+    <button>Get Content</button>
+    <p></p>
+    </body>
+    </html>

@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "/Applications/MAMP/htdocs/Boxes/index.html",
+            "file": "/Applications/MAMP/htdocs/AJAX/index.html",
         }
     ]
 }
