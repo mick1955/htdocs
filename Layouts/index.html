@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Grid Layouts</title>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/layouts.css" />
+</head>
+
+<body style="background-color: lightskyblue;font-family: arial">
+
+    <div class="page-header">
+        <div class="page-item">Software Encyclopedia</div>
+        <div class="page-item">Bootstrap 5.2</div>
+        <div class="page-item">Revision 0.1</div>
+    </div>
+
+    <div class="container">
+        <div class="description-header">Grid Layouts</div>
+
+        <!-- ------------- Source -------------- -->
+
+        <div>
+            <div class="accordion" id="accordionOne">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne">
+                            Source
+                        </button>
+                    </h2>
+
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <textarea rows="8" cols="100">
+const el = createElement(
+    <div class="container">
+    <p>Hello!</p>
+    </div>
+);
+                            </textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div style="height: 20px;"></div>
+
+            <!-- ------------- Notes -------------- -->
+
+            <div class="accordion" id="accordionTwo">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button type="button" class="accordion-button collapsed" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo">
+                            Notes
+                        </button>
+                    </h2>
+
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <ul>
+                                <li>Note #1</li>
+                                <li>Note #2</li>
+                                <li>Note #3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p></p>
+
+
+            <!--  Demo Code -->
+
+
+            <div class="layout-container">
+                <div class="layout-center">Layout</div>
+                <div class="layout-center">HTML</div>
+                <div class="layout-center">CSS</div>
+
+                <div class="layout-item layout-center">
+                    <img src="../img/example1-x.png" height="100px" />
+                </div>
+
+                <div class="layout-item">
+                    <pre>
+    &lt;div class="wrapper"&gt;
+        &lt;div class="box a"&gt;A&lt;/div&gt;
+        &lt;div class="box b"&gt;B&lt;/div&gt;
+        &lt;div class="box c"&gt;C&lt;/div&gt;
+        &lt;div class="box d"&gt;D&lt;/div&gt;
+        &lt;div class="box e"&gt;E&lt;/div&gt;
+        &lt;div class="box f"&gt;F&lt;/div&gt;
+        &lt;/div&gt;
+                    </pre>
+                </div>
+
+                <div class="layout-item">
+                    <pre>
+.wrapper {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+}
+    
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}                        
+                </pre>
+            </div>
+        </div>
+<!-- --------------------------------------------------------- -->
+<div class="layout-container">
+    <div class="layout-center">Layout</div>
+    <div class="layout-center">HTML</div>
+    <div class="layout-center">CSS</div>
+
+    <div class="layout-item layout-center">
+        <img src="../img/example1-x.png" height="100px" />
+    </div>
+
+    <div class="layout-item layout-center">
+        <pre>
+&lt;div class="wrapper"&gt;
+&lt;div class="box a"&gt;A&lt;/div&gt;
+&lt;div class="box b"&gt;B&lt;/div&gt;
+&lt;div class="box c"&gt;C&lt;/div&gt;
+&lt;div class="box d"&gt;D&lt;/div&gt;
+&lt;div class="box e"&gt;E&lt;/div&gt;
+&lt;div class="box f"&gt;F&lt;/div&gt;
+        </pre>
+    </div>
+
+    <div class="layout-item">
+        <pre>
+.wrapper {
+display: grid;
+grid-template-columns: 100px 100px 100px;
+grid-gap: 10px;
+background-color: #fff;
+color: #444;
+}
+
+.box {
+background-color: #444;
+color: #fff;
+border-radius: 5px;
+padding: 20px;
+font-size: 150%;
+}                        
+    </pre>
+</div>
+</div>
+<!-- --------------------------------------------------------- -->
+<hr />
+        
+        <div class="layout-container" style="justify-content;">
+            <div>Layout</div>
+            <div>HTML</div>
+            <div>CSS</div>
+
+            <div class="layout-item">
+                <img src="../img/example2-x.png" height="100px" />
+            </div>
+
+            <div class="layout-item">
+                <pre>
+&lt;div class="wrapper"&gt;
+&lt;div class="box a"&gt;A&lt;/div&gt;
+&lt;div class="box b"&gt;B&lt;/div&gt;
+&lt;div class="box c"&gt;C&lt;/div&gt;
+&lt;div class="box d"&gt;D&lt;/div&gt;
+&lt;div class="box e"&gt;E&lt;/div&gt;
+&lt;div class="box f"&gt;F&lt;/div&gt;
+                </pre>
+            </div>
+
+            <div class="layout-item">
+                <pre>
+    .wrapper {
+        display: grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-gap: 10px;
+        background-color: #fff;
+        color: #444;
+        }
+        
+    .box {
+        background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+        }                        
+            </pre>
+        </div>
+    </div>
+
+
+
+
+    <!-- --------------------------------------------------------- -->
+    <hr />
+        
+    <div class="layout-container" style="justify-content;">
+        <div>Layout</div>
+        <div>HTML</div>
+        <div>CSS</div>
+
+        <div class="layout-item">
+            <img src="../img/example5-x.png" height="120px" />
+        </div>
+
+        <div class="layout-item">
+            <pre>
+&lt;div class="wrapper"&gt;
+&lt;div class="box a"&gt;A&lt;/div&gt;
+&lt;div class="box b"&gt;B&lt;/div&gt;
+&lt;div class="box c"&gt;C&lt;/div&gt;
+&lt;div class="box d"&gt;D&lt;/div&gt;
+&lt;div class="box e"&gt;E&lt;/div&gt;
+&lt;div class="box f"&gt;F&lt;/div&gt;
+            </pre>
+        </div>
+
+        <div class="layout-item">
+            <pre>
+.wrapper {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+    }
+    
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    }                        
+        </pre>
+    </div>
+</div>
+
+
+
+
+
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/jquery.js"></script>
+        <script src="../js/jquery-ui.js"></script>
+</body>
+
+</html>

@@ -35,16 +35,3 @@
 	font-size: x-large;
 	color: darkgreen;
 }
-
-.demo_header {
-	border: 2px solid darkgreen;
-	height: 550px;
-	margin: 15px;
-	border-radius: 4px;
-}
-.demo_label {
-	display: flex;
-	justify-content: space-evenly;
-	font-weight: bold;
-}
-

@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width" />
     <script type="text/javascript" src="../js/jquery.min.js"></script>
 
-    # <script type="text/javascript" src="js/scripts.js"></script>
-
     <script type="text/javascript">
     $(document).ready(function () {
         $("button").click(function () {
-            $.ajax(url: "demo.txt", success: function(result){
+            consolog.log("HERE");
+            $.ajax(url: "demo.txt", success: function(result)){
                 $("#div1").html(result);
         }});
     });

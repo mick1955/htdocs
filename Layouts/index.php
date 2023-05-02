@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Template</title>
+    <title>Grid Layouts</title>
 
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,7 +23,7 @@
     </div>
 
     <div class="container">
-        <div class="description-header">Template</div>
+        <div class="description-header">Grid Layouts</div>
 
         <!-- ------------- Source -------------- -->
 
@@ -81,13 +81,19 @@
 
             <!--  Demo Code -->
 
-            <div class="layout-container">
-                <div class="layout-center">Layout</div>
-                <div class="layout-center">HTML</div>
-                <div class="layout-center">CSS</div>
+            <div class="demo_label">
+                <div>Layout</div>
+                <div>HTML</div>
+                <div>CSS</div>
             </div>
 
-            <div class="demo_header">
+            <div class="layout-container">
+                <div class="layout-item">
+                    <img src="../img/example1.png" height="100px" />
+                </div>
+                <div class="layout-item">
+                    an item
+                </div>
             </div>
         </div>
 
