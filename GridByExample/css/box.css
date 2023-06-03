@@ -1,0 +1,28 @@
+
+.container {
+    display: grid;
+    border: solid;
+    padding: 10px;
+}
+
+.wrapper {
+    display: grid;
+    /* border: solid; */
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 10px;
+    background-color: #fff;
+    color: #444;
+}
+
+.box {
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+}
+
+.html {
+    border: solid;
+    padding: 10px;
+}
